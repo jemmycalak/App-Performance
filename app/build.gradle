@@ -52,6 +52,7 @@ dependencies {
     implementation deps.core_ktx
     implementation deps.constraint_layout
     implementation deps.arch_core.runtime
+    implementation project(":feature:chat")
 
     // Navigation
     implementation deps.navigation.runtime_ktx

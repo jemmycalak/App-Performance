@@ -36,6 +36,8 @@
             <!-- This is added to handle a deep link -->
             <nav-graph android:value="@navigation/list" />
         </activity>
+
+<!--        <activity android:name="com.example.chat.ChatActivity"/>-->
     </application>
 
 </manifest>
