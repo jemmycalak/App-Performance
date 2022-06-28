@@ -22,15 +22,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.android.navigationadvancedsample.R
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 /**
  * Shows "About"
  */
 class About : Fragment() {
+
+    val viewModel: HomeViewModel by viewModel()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
 
         return inflater.inflate(R.layout.fragment_about, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel.aku
     }
 }
