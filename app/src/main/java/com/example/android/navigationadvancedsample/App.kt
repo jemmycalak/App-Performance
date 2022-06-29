@@ -2,6 +2,7 @@ package com.example.android.navigationadvancedsample
 
 import android.app.Application
 import com.example.android.navigationadvancedsample.homescreen.HomeViewModel
+import com.example.chat.di.chatModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.android.java.KoinAndroidApplication
@@ -16,7 +17,8 @@ val module = module {
 }
 
 val listModule = listOf(
-    module
+    module,
+    chatModule
 )
 
 open class App: Application() {
