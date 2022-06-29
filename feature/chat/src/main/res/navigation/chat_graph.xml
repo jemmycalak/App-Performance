@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_graph"
+    app:startDestination="@id/listChatFragment">
+
+    <fragment
+        android:id="@+id/listChatFragment"
+        android:name="com.example.chat.ui.listchat.ListChatFragment"
+        android:label="@string/listchatfragment" />
+
+    <fragment
+        android:id="@+id/roomChatFragment"
+        android:name="com.example.chat.ui.roomchat.RoomChatFragment"
+        android:label="RoomChatFragment"
+        tools:layout="@layout/fragment_list_chat" />
+</navigation>
