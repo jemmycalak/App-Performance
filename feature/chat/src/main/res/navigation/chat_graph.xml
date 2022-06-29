@@ -8,11 +8,24 @@
     <fragment
         android:id="@+id/listChatFragment"
         android:name="com.example.chat.ui.listchat.ListChatFragment"
-        android:label="@string/listchatfragment" />
+        android:label="@string/listchatfragment" >
+        <action
+            android:id="@+id/open_roomChatFragment"
+            app:destination="@id/roomChatFragment" />
+        <action
+            android:id="@+id/open_to_chatActivity"
+            app:destination="@id/chatActivity" />
+    </fragment>
 
     <fragment
         android:id="@+id/roomChatFragment"
         android:name="com.example.chat.ui.roomchat.RoomChatFragment"
         android:label="RoomChatFragment"
         tools:layout="@layout/fragment_list_chat" />
+    <activity
+        android:id="@+id/chatActivity"
+        android:name="com.example.chat.ui.ChatActivity"
+        android:label="activity_chat"
+        tools:layout="@layout/activity_chat" />
+
 </navigation>
