@@ -36,6 +36,7 @@ class ChatActivity : AppCompatActivity() {
 
         val inflater = navHostFragment.navController.navInflater
         val graph = inflater.inflate(R.navigation.nav_chat_activity)
+//        graph.setStartDestination(0)
 
         navController.setGraph(graph, args)
 
