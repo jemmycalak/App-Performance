@@ -30,6 +30,15 @@ class ChatActivity : AppCompatActivity() {
         ) as NavHostFragment
         navController = navHostFragment.navController
 
+        val args = Bundle().apply {
+            putString("data", ChatActivity::class.java.simpleName)
+        }
+
+        val inflater = navHostFragment.navController.navInflater
+        val graph = inflater.inflate(R.navigation.nav_chat_activity)
+
+        navController.setGraph(graph, args)
+
         // Setup the ActionBar with navController and 3 top level destinations
         appBarConfiguration = AppBarConfiguration(
             setOf(R.id.roomChatFragment2)
