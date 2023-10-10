@@ -15,3 +15,5 @@
  */
 
 include ':app'
+include ':feature:chat'
+include ':feature:home'

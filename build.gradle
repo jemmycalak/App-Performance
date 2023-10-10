@@ -22,9 +22,11 @@ buildscript {
     dependencies {
         classpath deps.android_gradle_plugin
         classpath deps.kotlin.plugin
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.2"
     }
     repositories {
         google()
+        mavenCentral()
     }
 }
 

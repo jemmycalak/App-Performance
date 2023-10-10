@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
         // Setup the ActionBar with navController and 3 top level destinations
         appBarConfiguration = AppBarConfiguration(
-            setOf(R.id.titleScreen, R.id.leaderboard,  R.id.register)
+            setOf(R.id.listChatFragment, R.id.titleScreen, R.id.leaderboard,  R.id.register )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
     }
